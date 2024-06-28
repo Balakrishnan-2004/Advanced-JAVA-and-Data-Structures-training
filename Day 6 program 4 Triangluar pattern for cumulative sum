@@ -1,0 +1,25 @@
+/* Online Java Compiler and Editor */
+import java.util.Scanner;
+public class HelloWorld {
+
+    public static void main(String []args) {
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter a input1:");
+        int input1=scan.nextInt();
+        System.out.println("Enter a input2:");
+        int input2=scan.nextInt();
+        System.out.println("Enter a input3:");
+        int input3=scan.nextInt();
+        int sum=0,i,j;
+        for(i=0; i<input1; i++) {
+            for(j=0; j<=i; j++) {
+                sum+=input2;
+                input2=input2+input3;
+                System.out.println(""+sum);
+            }
+            System.out.println();
+        }
+    }
+
+
+}
