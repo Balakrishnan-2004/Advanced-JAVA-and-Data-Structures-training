@@ -1,13 +1,21 @@
-int isPalinNum(int input1){
-  // Read only region end
-  // Write code here
-  int temp=input1;
-  int rev=0;
-  while(input1>0){
-    rev=rev*10+input1%10;
-    input1/=10;
-  }
-  if(rev!=temp)
-    return 1;
-return 2;
-}
+import java.util.Scanner;
+public class HelloWorld{
+
+     public static void main(String []args){
+             Scanner scan=new Scanner(System.in);
+             System.out.println("Enter a input:");
+             int input1=scan.nextInt();
+             int temp=input1;
+             int rev=0;
+             while(input1>0){
+             rev=rev*10+input1%10;
+             input1/=10;
+             }
+             if(rev!=temp){
+                 System.out.println(temp+" is rearranged in "+rev);
+             }
+             else{
+             System.out.println("Is not rearranged");
+             }
+             }
+     }
